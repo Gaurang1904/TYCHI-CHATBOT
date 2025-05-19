@@ -20,7 +20,7 @@ knowledge_base = load_knowledge_base()
 
 # --- Improved search function for KB ---
 def search_knowledge_base(user_text):
-    user_text_lower = user_text.lower()
+    user_keywords = user_text.lower().split()
     results = []
 
     def recursive_search(node):
@@ -28,15 +28,15 @@ def search_knowledge_base(user_text):
             for key, value in node.items():
                 if key == "example_questions" and isinstance(value, list):
                     for question in value:
-                        if user_text_lower in question.lower():
-                            # Add description if exists in current node
+                        question_lower = question.lower()
+                        # Check if any user keyword is in this question
+                        if any(keyword in question_lower for keyword in user_keywords):
                             if "description" in node:
                                 results.append(node["description"])
                             return True
                 elif isinstance(value, (dict, list)):
                     found = recursive_search(value)
                     if found:
-                        # Add description of parent node if exists
                         if "description" in node:
                             results.append(node["description"])
                         return True
@@ -49,7 +49,6 @@ def search_knowledge_base(user_text):
 
     recursive_search(knowledge_base)
     if results:
-        # Join and return unique results to avoid duplicates
         unique_results = list(dict.fromkeys(results))
         return "\n\n".join(unique_results)
     return None
