@@ -18,37 +18,41 @@ def load_knowledge_base():
 
 knowledge_base = load_knowledge_base()
 
-# --- Simple function to search knowledge base ---
+# --- Improved search function for KB ---
 def search_knowledge_base(user_text):
-    # naive search: check if any key or section description contains user input keywords
     user_text_lower = user_text.lower()
-    answers = []
+    results = []
 
-    def recursive_search(obj):
-        if isinstance(obj, dict):
-            for k, v in obj.items():
-                if isinstance(v, (str, list)):
-                    # Check keys and string values
-                    if isinstance(v, str) and user_text_lower in v.lower():
-                        answers.append(v)
-                    elif isinstance(v, list):
-                        for item in v:
-                            if isinstance(item, str) and user_text_lower in item.lower():
-                                answers.append(item)
-                elif isinstance(v, dict):
-                    recursive_search(v)
-
-        elif isinstance(obj, list):
-            for item in obj:
-                recursive_search(item)
+    def recursive_search(node):
+        if isinstance(node, dict):
+            for key, value in node.items():
+                if key == "example_questions" and isinstance(value, list):
+                    for question in value:
+                        if user_text_lower in question.lower():
+                            # Add description if exists in current node
+                            if "description" in node:
+                                results.append(node["description"])
+                            return True
+                elif isinstance(value, (dict, list)):
+                    found = recursive_search(value)
+                    if found:
+                        # Add description of parent node if exists
+                        if "description" in node:
+                            results.append(node["description"])
+                        return True
+        elif isinstance(node, list):
+            for item in node:
+                found = recursive_search(item)
+                if found:
+                    return True
+        return False
 
     recursive_search(knowledge_base)
-
-    if answers:
-        # Return the first few matched answers joined
-        return "\n\n".join(answers[:3])
-    else:
-        return None
+    if results:
+        # Join and return unique results to avoid duplicates
+        unique_results = list(dict.fromkeys(results))
+        return "\n\n".join(unique_results)
+    return None
 
 # --- Initialize Session State ---
 if "messages" not in st.session_state:
