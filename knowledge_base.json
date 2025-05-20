@@ -1,158 +1,240 @@
 {
-  "knowledge_base": {
-    "BuildWithTychiWallet": {
-      "description": "Unlock the full potential of Web3 with Tychi Wallet’s tools and resources. Whether you're a developer, a dApp creator, or an asset owner, we provide everything you need to thrive in the decentralized ecosystem.",
-      "sections": {
-        "Guides": {
-          "description": "Get guides for building powerful Web3 applications, including multi-chain compatibility and gas fee optimization with TYI Token and BNB.",
-          "example_questions": [
-            "How do I integrate Tychi Wallet into my project?",
-            "What are the benefits of using TYI Token for gas fees?"
-          ]
-        },
-        "WalletCore": {
-          "description": "Open-source, mobile-focused crypto wallet library supporting multi-chain transactions, staking, token swapping, and more.",
-          "github_link": "https://github.com/tychi-wallet/wallet-core",
-          "example_questions": [
-            "What features does Wallet Core support?",
-            "Where can I find Wallet Core on GitHub?"
-          ]
-        },
-        "SubmitDApp": {
-          "description": "Get your decentralized app listed on Tychi Wallet to reach millions globally, leveraging multi-chain support and seamless UI.",
-          "call_to_action": "Submit Your dApp Now",
-          "example_questions": [
-            "How do I submit my dApp to Tychi Wallet?",
-            "What are the benefits of listing my dApp?"
-          ]
-        },
-        "GetAssetsListed": {
-          "description": "List your tokens or digital assets on Tychi Wallet for increased visibility with multi-chain integration and gas fee flexibility.",
-          "call_to_action": "Apply for Listing",
-          "example_questions": [
-            "How do I list my asset on Tychi Wallet?",
-            "Can I pay gas fees with TYI Token or BNB?"
-          ]
-        }
-      },
-      "why_choose_tychi_wallet": {
-        "multi_chain_ecosystem": {
-          "description": "Integrate and operate across 100+ blockchains effortlessly.",
-          "example_questions": ["What blockchains does Tychi Wallet support?"]
-        },
-        "developer_friendly_tool": {
-          "description": "Streamlined SDKs and APIs for smooth integration.",
-          "example_questions": ["How easy is it to integrate Tychi Wallet with my app?"]
-        },
-        "gas_fee_optimization": {
-          "description": "Empower users to pay transaction fees in TYI Token or BNB.",
-          "example_questions": ["How can users optimize gas fees?"]
-        },
-        "global_audience": {
-          "description": "Connect with a rapidly growing Web3 community.",
-          "example_questions": ["How big is the Tychi Wallet user base?"]
-        }
-      },
-      "closing_statement": "Start building the future with Tychi Wallet today! 1 Million Users, Plus You."
+  "product": "Tychi Wallet",
+  "description": "A next-generation Web3 wallet that enables secure, multi-chain asset management, dApp interaction, token swapping, staking, and learning via an integrated educational system. Built for users and developers alike.",
+  "sections": {
+    "Build With Tychi Wallet": {
+      "description": "Resources and SDKs for developers and businesses to build on the Tychi ecosystem.",
+      "features": [
+        "Comprehensive REST & GraphQL APIs",
+        "SDKs in JavaScript, Python, Rust",
+        "Smart contract templates (Solidity, Rust)",
+        "Access to testnet environments",
+        "Web3 onboarding modules",
+        "Developer sandbox with faucet integration"
+      ],
+      "portal": "🔗 dev.tychiwallet.com"
     },
-    "PrivacyPolicy": {
-      "description": "Tychi Wallet is committed to protecting your personal data. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our services.",
-      "sections": {
-        "Introduction": {
-          "description": "Welcome to TychiWallet. Your privacy is important to us, and we are committed to protecting your personal data.",
-          "example_questions": [
-            "What is Tychi Wallet's approach to privacy?",
-            "Why is my privacy important to Tychi Wallet?"
+    "Wallet Core": {
+      "description": "Open-source crypto wallet library built for flexibility, security, and multi-chain compatibility.",
+      "features": [
+        "Multi-chain wallet engine with abstracted logic",
+        "Built-in staking, DEX integration, and gas fee estimation",
+        "Customizable themes and wallet branding",
+        "React Native and Flutter SDKs"
+      ],
+      "resources": {
+        "github_link": "🔗 https://github.com/tychiwallet/core",
+        "documentation": "🔗 https://docs.tychiwallet.com/wallet-core"
+      }
+    },
+    "Submit dApp": {
+      "description": "Launch your decentralized app directly on Tychi Wallet and gain exposure to a global audience.",
+      "process": [
+        "Submit smart contract & frontend info",
+        "Security audit (manual or via CertiK/Immunefi)",
+        "dApp review & sandbox testing",
+        "Live deployment on Tychi Wallet"
+      ],
+      "benefits": [
+        "Featured on homepage",
+        "Direct user access",
+        "Push notifications and analytics dashboard"
+      ]
+    },
+    "Asset Listing": {
+      "description": "List tokens on Tychi Wallet with support for custom metadata, branding, and gas fee optimization.",
+      "requirements": [
+        "Token contract address",
+        "Chain compatibility",
+        "Audit verification (if applicable)"
+      ],
+      "additional_features": [
+        "Auto price feed integration",
+        "Real-time trading data",
+        "DEX integration (Uniswap, PancakeSwap, etc.)"
+      ]
+    },
+    "Why Choose Tychi Wallet": {
+      "features": [
+        "Multi-Chain Ecosystem with 50+ networks",
+        "Developer-Friendly APIs and SDKs",
+        "Customizable UI themes",
+        "Universal Gas Fee Optimization using TYI or BNB",
+        "Educational integration for on-chain learning"
+      ],
+      "use_cases": [
+        "Beginner crypto onboarding",
+        "Staking and yield farming",
+        "NFT management",
+        "DAO participation"
+      ]
+    },
+    "Technology": {
+      "overview": "A decentralized architecture built using cutting-edge tools and open protocols.",
+      "components": {
+        "Multi-Chain Asset Management": {
+          "technology_stack": [
+            "Wormhole Bridge",
+            "LayerZero",
+            "Cosmos IBC",
+            "Chainlink CCIP"
+          ],
+          "benefits": [
+            "Real-time asset mirroring",
+            "Cross-chain token transfers with minimal slippage"
           ]
         },
-        "InformationWeCollect": {
-          "PersonalInformation": {
-            "description": "Name, email address, phone number (if provided), and identification documents for KYC/AML compliance.",
-            "example_questions": [
-              "What personal information does Tychi Wallet collect?",
-              "Do I need to provide ID documents?"
-            ]
-          },
-          "NonPersonalInformation": {
-            "description": "Device information like IP address, browser type, operating system, usage data including transaction history and interactions.",
-            "example_questions": [
-              "What non-personal information does Tychi Wallet collect?",
-              "Does Tychi Wallet track my device info?"
-            ]
-          },
-          "BlockchainData": {
-            "description": "Public blockchain addresses associated with your transactions and blockchain transaction details (which Tychi Wallet does not control).",
-            "example_questions": [
-              "What blockchain data does Tychi Wallet collect?",
-              "Does Tychi Wallet control blockchain transaction data?"
-            ]
-          }
-        },
-        "HowWeUseYourInformation": {
-          "description": "We use your data to provide and improve services, facilitate transactions, ensure legal compliance, prevent fraud, and communicate updates.",
-          "example_questions": [
-            "How does Tychi Wallet use my information?",
-            "Is my data used to prevent fraud?"
+        "Security Measures": [
+          "End-to-end encryption (AES-256)",
+          "Biometric login support (Face ID, Touch ID)",
+          "MPC wallet recovery (Shamir Secret Sharing)",
+          "2FA with TOTP & hardware token support",
+          "Ledger & Trezor compatibility"
+        ],
+        "Universal Gas Fee Flexibility": {
+          "description": "Users can choose gas tokens across supported chains and convert via backend rate oracle.",
+          "smart_contract_features": [
+            "Slippage control",
+            "Fallback fees",
+            "Fee estimation API"
           ]
         },
-        "InformationSharingAndDisclosure": {
-          "description": "We do not sell personal data but may share it with service providers, regulatory authorities, or during business transfers.",
-          "example_questions": [
-            "Does Tychi Wallet share my personal data?",
-            "Who might Tychi Wallet share my information with?"
+        "Cold Wallet Storage Flexibility": {
+          "options": [
+            "Secure vault integration",
+            "Air-gapped USB drive export",
+            "Encrypted key storage in IPFS",
+            "QR code offline backup",
+            "Ledger Nano sync"
           ]
         },
-        "DataSecurity": {
-          "description": "Industry-standard security measures like encryption and access controls are implemented, but absolute security cannot be guaranteed.",
-          "example_questions": [
-            "How does Tychi Wallet protect my data?",
-            "Is my information completely secure?"
+        "Debit Card Integration": {
+          "description": "Crypto-to-fiat debit system backed by partner banks and Visa/Mastercard.",
+          "features": [
+            "Instant crypto-fiat conversion at point of sale",
+            "Card controls via wallet app",
+            "KYC & AML compliance dashboard",
+            "Merchant rewards and TYI cashback"
           ]
         },
-        "YourRightsAndChoices": {
-          "description": "You have rights to access, correct, delete your data, and opt out of marketing communications by contacting Tychi Wallet.",
-          "example_questions": [
-            "How can I access or correct my data?",
-            "Can I opt out of marketing emails?"
+        "Multi-Chain Management": {
+          "description": "Unified interface for all your blockchain accounts.",
+          "technology": [
+            "Indexed API layer with subgraphs",
+            "Background sync service",
+            "Token metadata resolver"
           ]
         },
-        "CookiesAndTrackingTechnologies": {
-          "description": "Tychi Wallet uses cookies and similar technologies to enhance user experience. Cookie settings can be managed via browser.",
-          "example_questions": [
-            "Does Tychi Wallet use cookies?",
-            "How do I manage cookie settings?"
-          ]
-        },
-        "ThirdPartyLinks": {
-          "description": "Our services may link to third-party websites whose privacy practices are not controlled by Tychi Wallet.",
-          "example_questions": [
-            "Does Tychi Wallet control third-party websites?",
-            "Are third-party links safe?"
-          ]
-        },
-        "ChildrensPrivacy": {
-          "description": "Tychi Wallet does not knowingly collect data from individuals under 18 and will remove such data if discovered.",
-          "example_questions": [
-            "Does Tychi Wallet collect data from children?",
-            "What happens if data from under 18 is collected?"
-          ]
-        },
-        "ChangesToPrivacyPolicy": {
-          "description": "Privacy Policy updates will be posted on our website. Continued use of services constitutes acceptance of the changes.",
-          "example_questions": [
-            "How will I know if the privacy policy changes?",
-            "What if I don't agree with changes to the privacy policy?"
-          ]
-        },
-        "ContactInformation": {
-          "description": "For questions or concerns about the Privacy Policy, please contact Tychi Wallet.",
-          "example_questions": [
-            "How can I contact Tychi Wallet about privacy concerns?",
-            "Where can I ask questions about the privacy policy?"
+        "Cryptocurrency Support": {
+          "networks": [
+            "Ethereum",
+            "BNB Chain",
+            "Polygon",
+            "Solana",
+            "Tron",
+            "Avalanche",
+            "Base",
+            "Arbitrum",
+            "ZKSync"
+          ],
+          "token_support": [
+            "ERC-20",
+            "BEP-20",
+            "TRC-20",
+            "CW-20 (Cosmos)",
+            "SPL (Solana)"
+          ],
+          "additional_features": [
+            "Price alerts",
+            "Portfolio tracker",
+            "Tax report export (CSV, JSON)"
           ]
         }
-      },
-      "closing_statement": "This Privacy Policy complies with applicable laws and best practices. For full legal compliance, consult a legal expert."
-    }
+      }
+    },
+    "Education": {
+      "description": "Learn Web3 concepts and earn TYI tokens while doing so.",
+      "features": [
+        "Courses on DeFi, NFTs, Smart Contracts",
+        "Gamified progress tracking",
+        "Wallet-linked learning profile",
+        "Earn-to-learn reward system",
+        "Certifications for completion"
+      ],
+      "tools": {
+        "AI Instructor": "Personalized Web3 tutor using LLMs",
+        "Practice Wallet": "Simulated environment with test tokens"
+      }
+    },
+    "UI Features": {
+      "themes": [
+        "Dark mode / Light mode",
+        "High-contrast mode (accessibility)",
+        "Custom token colors and icons"
+      ],
+      "dashboard_widgets": [
+        "Portfolio analytics",
+        "Chain performance metrics",
+        "Watchlist"
+      ],
+      "notifications": [
+        "Push alerts for staking rewards",
+        "Gas fee drops",
+        "Airdrops & governance votes"
+      ]
+    },
+    "Privacy Policy": {
+      "sections": [
+        "Introduction",
+        "Information We Collect",
+        "How We Use Your Information",
+        "Information Sharing and Disclosure",
+        "Data Security",
+        "Your Rights and Choices",
+        "Cookies and Tracking Technologies",
+        "Third-Party Links",
+        "Children’s Privacy",
+        "Changes to This Privacy Policy",
+        "Contact Information"
+      ]
+    },
+    "Cookie Policy": {
+      "description": "Explains how cookies are used for functionality, analytics, and personalization.",
+      "sections": [
+        "Purpose of Cookies",
+        "Types of Cookies (Session, Persistent)",
+        "Managing Cookies",
+        "Importance of Cookie Policies",
+        "Contact Information"
+      ]
+    },
+    "User Journey": {
+      "onboarding": [
+        "Create Wallet or Import via Seed Phrase",
+        "Optional KYC for fiat card activation",
+        "Enable biometric security",
+        "Tutorial walkthrough"
+      ],
+      "core_actions": [
+        "Receive and send crypto",
+        "Stake tokens",
+        "Connect to dApps",
+        "Join governance proposals"
+      ],
+      "engagement_loop": [
+        "Track portfolio",
+        "Earn rewards via education",
+        "Use debit card",
+        "Participate in airdrops"
+      ]
+    },
+    "Tagline": "Start Building the Future with Tychi Wallet Today!",
+    "core_values": [
+      "Innovative",
+      "Secure",
+      "User-Centric",
+      "Inclusive",
+      "Transparent"
+    ]
   }
 }
