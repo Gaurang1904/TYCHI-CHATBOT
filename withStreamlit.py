@@ -68,12 +68,6 @@ if st.button("Send") and user_input:
 
     # Try to fetch answer from knowledge base first
     kb_reply = search_knowledge_base(user_input)
-    if kb_reply:
-    st.write("✅ Matched from Knowledge Base:")
-    st.write(kb_reply)
-else:
-    st.write("❌ No match in Knowledge Base. Using Groq API.")
-
 
     if kb_reply:
         reply = kb_reply
