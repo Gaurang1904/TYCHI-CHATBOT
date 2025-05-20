@@ -12,7 +12,7 @@
         "Web3 onboarding modules",
         "Developer sandbox with faucet integration"
       ],
-      "portal": "🔗 dev.tychiwallet.com"
+      "portal": "\ud83d\udd17 dev.tychiwallet.com"
     },
     "Wallet Core": {
       "description": "Open-source crypto wallet library built for flexibility, security, and multi-chain compatibility.",
@@ -23,8 +23,8 @@
         "React Native and Flutter SDKs"
       ],
       "resources": {
-        "github_link": "🔗 https://github.com/tychiwallet/core",
-        "documentation": "🔗 https://docs.tychiwallet.com/wallet-core"
+        "github_link": "\ud83d\udd17 https://github.com/tychiwallet/core",
+        "documentation": "\ud83d\udd17 https://docs.tychiwallet.com/wallet-core"
       }
     },
     "Submit dApp": {
@@ -193,7 +193,7 @@
         "Your Rights and Choices",
         "Cookies and Tracking Technologies",
         "Third-Party Links",
-        "Children’s Privacy",
+        "Children\u2019s Privacy",
         "Changes to This Privacy Policy",
         "Contact Information"
       ]
@@ -235,6 +235,928 @@
       "User-Centric",
       "Inclusive",
       "Transparent"
-    ]
+    ],
+    "Mobile App": {
+      "description": "Experience the full power of Web3 on the go with the Tychi Wallet mobile app.",
+      "features": [
+        "Seamless multi-chain asset management",
+        "Gas fee payments using TYI Token or BNB",
+        "Cold storage and advanced features like staking, token swapping, and family wallets"
+      ],
+      "downloads": {
+        "iOS": "Download on App Store",
+        "Android": "Download on Google Play"
+      },
+      "tagline": "Experience Web3 mobility with top-notch security and user-friendly design!"
+    },
+    "Browser Extension": {
+      "description": "Optimized Web3 experience for desktop users through a secure browser extension.",
+      "features": [
+        "Multi-chain wallet functionality",
+        "Flexible gas fee payments in TYI or BNB",
+        "Security-first integration for safe Web3 interactions"
+      ],
+      "download": "Add to Chrome",
+      "tagline": "Unlock the full potential of Web3 on your desktop with Tychi Wallet!"
+    },
+    "Partnerships": {
+      "philosophy": "Collaboration drives innovation. Tychi Wallet actively builds meaningful partnerships to shape a thriving Web3 ecosystem.",
+      "opportunities": {
+        "Established Projects": [
+          "Get your token or asset listed in Tychi Wallet",
+          "Leverage multi-chain compatibility",
+          "Enable seamless staking opportunities",
+          "Integrate with decentralized identity system"
+        ],
+        "New Projects": [
+          "Access to Wallet Core\u2014open-source crypto wallet library",
+          "Priority dApp listing",
+          "Web3 tech support and co-marketing",
+          "Partnership application available"
+        ]
+      },
+      "current_partners": [
+        "Multi-chain token management integration",
+        "Staking and asset swapping enablement",
+        "BNB Greenfield for decentralized data storage"
+      ],
+      "call_to_action": "Be part of our growing ecosystem and start collaborating today."
+    },
+    "White Paper Overview": {
+      "description": "Detailed overview of Tychi Wallet's white paper, including its core architecture, problems addressed, technologies used, and significance to the Web3 ecosystem.",
+      "topics": [
+        "Critical Technologies",
+        "Blockchain Interoperability",
+        "Gas Fee Abstraction",
+        "Decentralized Identity (DID)",
+        "Cold Wallet & Multi-Factor Authentication",
+        "Social Recovery Mechanisms",
+        "AI-Driven Fraud Detection",
+        "Web3 Ecosystem Impact",
+        "Problems Addressed (Asset Management, Safety, UX, Compatibility)",
+        "Design Overview & Risk Management",
+        "Tokenomics & Roadmap"
+      ]
+    },
+    "Tychi Wallet Deep Design": {
+      "design_overview": {
+        "summary": "Tychi Wallet addresses Web3 usability challenges through features like multi-chain support, decentralized ID, cold storage, and unique tokenomics, offering a safe and user-friendly experience.",
+        "design_goals": {
+          "interoperability": "Supports seamless connection to 50+ blockchains.",
+          "security": "Includes 3FA and cold wallet options.",
+          "accessibility": "Simplifies Web3 tech for mass adoption.",
+          "scalability": "Built to accommodate future blockchain integrations.",
+          "decentralization": "Users retain complete control over assets and identities."
+        }
+      },
+      "notion": {
+        "description": "Tychi Wallet is a hybrid solution that blends decentralized security with the flexibility of centralized platforms. It uses advanced cryptographic algorithms for user data and payment protection."
+      },
+      "algorithm": {
+        "multi_chain_bridging": {
+          "description": "Allows easy token exchange across 50+ chains using secure smart contracts and blockchain bridges.",
+          "process": [
+            "User selects source and destination chains.",
+            "Relay network validates transaction.",
+            "Tokens are locked on source chain.",
+            "Target chain mints/releases equal value using Merkle proofs and cryptographic signatures.",
+            "Automated liquidity pools reduce transfer delay and ensure reliability."
+          ]
+        },
+        "gas_fee_optimization": {
+          "description": "Enables gas fee payment with TYI or BNB via a fee abstraction mechanism.",
+          "process": [
+            "User inputs TYI or BNB.",
+            "System converts to required native token.",
+            "Smart contracts handle conversion using liquidity pools.",
+            "Eliminates need to hold various native tokens, reducing cost and complexity."
+          ]
+        },
+        "social_recovery": {
+          "description": "Implements decentralized recovery using trusted contacts and Shamir's Secret Sharing.",
+          "process": [
+            "Recovery request is split and encrypted.",
+            "Parts sent to pre-approved guardians with cryptographic IDs.",
+            "Minimum confirmations required for private key reconstruction.",
+            "Multi-layer encryption protects during recovery."
+          ]
+        }
+      },
+      "risk_management": {
+        "measures": [
+          "Smart Contract Audits to find and fix vulnerabilities.",
+          "Cold Storage for secure, long-term asset storage.",
+          "Redundancy through backup mechanisms for reliability.",
+          "Fraud Detection via AI-based anomaly detection systems."
+        ]
+      },
+      "features": {
+        "multi_chain_asset_management": {
+          "overview": "Manage assets on 50+ blockchains via a single interface, simplifying transfers, swaps, and staking.",
+          "technical_design": {
+            "blockchain_bridges": "Locks tokens on source chain and mints equivalent on target using cryptographic proofs.",
+            "smart_contracts": "Automates cross-chain processes with secure execution.",
+            "liquidity_management": "Ensures fast asset transfers using automated liquidity pools.",
+            "real_time_validation": "Decentralized relay network prevents double-spending or invalid transfers."
+          },
+          "mathematical_models": {
+            "token_bridging_equation": "[To be provided or implemented]",
+            "transaction_fee_calculation": "[To be provided or implemented]",
+            "time_optimization": "[To be provided or implemented]",
+            "liquidity_pool_balancing": "[To be provided or implemented]"
+          }
+        },
+        "gas_fee_flexibility": {
+          "overview": "Users pay gas fees using TYI or BNB instead of native tokens.",
+          "technical_engineering": {
+            "fee_abstraction_layer": "Real-time conversion of TYI/BNB to native tokens via smart contracts.",
+            "workflow": [
+              "User initiates transaction.",
+              "Smart contracts evaluate gas fees and initiate swap.",
+              "Transaction executed with converted native tokens.",
+              "System tracks gas fee fluctuations for savings."
+            ]
+          }
+        }
+      }
+    },
+    "Tychi Wallet Extended Features": {
+      "Cold Wallet Storage (Paid Premium Feature)": {
+        "overview": "Secure assets offline with three-factor authentication.",
+        "technical_design": {
+          "Device-Based Storage": {
+            "features": [
+              "Private keys are stored on a hardware device.",
+              "Encrypted with AES-256 encryption and protected by a unique PIN code.",
+              "Three-factor authentication: Password or PIN, Biometric verification, OTP through Google Authenticator."
+            ]
+          },
+          "Decentralized Cloud Storage": {
+            "features": [
+              "Uses distributed storage solutions such as IPFS.",
+              "Private keys are fragmented and stored using Shamir's Secret Sharing.",
+              "Retrieval requires threshold authentication from multiple nodes."
+            ]
+          },
+          "USB Drive or External Device": {
+            "features": [
+              "Private keys exported and stored on an encrypted USB drive.",
+              "Accessible only via Tychi Wallet's proprietary decryption software.",
+              "Tamper-proof hardware to prevent unauthorized access."
+            ]
+          }
+        }
+      },
+      "Social Recovery Wallet": {
+        "overview": "Recover wallets using trusted contacts.",
+        "technical_design": {
+          "Key Components": {
+            "Smart Contract-Based Guardianship": "Custom smart contract ensures transparency, security, and tamper-proof operations.",
+            "Trusted Guardians": "Designated individuals/entities with unique cryptographic identifiers.",
+            "Shamir's Secret Sharing Algorithm": "Splits private key into fragments requiring threshold for reconstruction.",
+            "Encrypted Fragments": "Each fragment encrypted and distributed among guardians."
+          },
+          "Recovery Process": [
+            "Initiation via Tychi Wallet interface.",
+            "Guardian verification with multi-factor authentication.",
+            "Threshold confirmations enable fragment reassembly.",
+            "Smart contract reconstructs and returns encrypted private key.",
+            "User updates key and guardians."
+          ],
+          "Security Features": [
+            "Multi-layer encryption for key fragments.",
+            "Time-limited access for requests.",
+            "On-chain audit trails.",
+            "Dynamic update of guardianship list."
+          ]
+        }
+      },
+      "Decentralized Identity Wallet": {
+        "overview": "Enables secure, self-sovereign identity management using DIDs and cryptographic proofs.",
+        "technical_design": {
+          "DID Standards": [
+            "Based on W3C DID standards.",
+            "No reliance on centralized registries."
+          ],
+          "Cryptographic Proofs": [
+            "Uses ECC for identity verification.",
+            "Ensures data authenticity and tamper-resistance."
+          ],
+          "Decentralized Verifiable Credentials (VCs)": [
+            "Store and verify credentials like degrees or licenses.",
+            "Signed by issuers and verifiable without third parties."
+          ],
+          "Storage Architecture": {
+            "On-Chain": "Stores DID metadata on Ethereum/Polkadot.",
+            "Off-Chain": "Stores encrypted VCs in IPFS or Arweave."
+          },
+          "Key Management": [
+            "HD wallets for secure identity key handling.",
+            "Multi-signature and recovery mechanisms."
+          ],
+          "User Authentication": "3FA: biometric + device + passphrase.",
+          "Web3 Integration": [
+            "Smart contract-based attestations.",
+            "Easy onboarding for identity-enabled dApps."
+          ],
+          "Privacy Features": [
+            "Zero-Knowledge Proofs for private verification.",
+            "Selective disclosure for controlled data sharing."
+          ]
+        }
+      },
+      "Educational Wallet": {
+        "overview": "Empowers users to learn Web3 with in-wallet learning modules, quizzes, and rewards.",
+        "technical_design": {
+          "Learning Modules": {
+            "Structure": "Beginner to advanced levels.",
+            "Content": "Topics like DeFi, NFTs, staking, etc.",
+            "Media": "Text, infographics, video tutorials."
+          },
+          "Interactive Quizzes": {
+            "Dynamic": "Tailored based on prior results.",
+            "Gamified": "Rewards in TYI tokens or NFTs."
+          },
+          "Video Integration": [
+            "Hosted on decentralized networks like IPFS.",
+            "Progress tracked and resumable."
+          ],
+          "Wallet Integration": [
+            "Practical demos like simulated swaps.",
+            "Rewards redeemable in-wallet."
+          ],
+          "Security & Privacy": [
+            "User data is encrypted.",
+            "No personal identification needed."
+          ]
+        }
+      },
+      "Family/Group Wallet": {
+        "overview": "Enables shared asset management with role-based controls for families, teams, or communities.",
+        "technical_design": {
+          "Core Framework": [
+            "Multi-signature wallets for approval-based actions.",
+            "Role-based access (Viewer, Approver, Manager)."
+          ],
+          "Smart Contract Enforcement": [
+            "Rules for votes and permission checks.",
+            "Transaction history and access logs."
+          ],
+          "Security": [
+            "Decentralized storage for encrypted data.",
+            "Activity notifications and time-limited access."
+          ]
+        }
+      },
+      "Subscription-Based Wallet": {
+        "overview": "Access premium features via tiered subscriptions with on-chain payment verification.",
+        "technical_design": {
+          "Smart Contract Structure": [
+            "Tier management and benefits mapping.",
+            "TYI-based on-chain payment verification.",
+            "Access control based on subscription."
+          ],
+          "Cold Wallet Service Integration": [
+            "Activated for 5-year subscribers.",
+            "Includes 3FA security layers.",
+            "Extras: analytics tools, priority support, exclusive staking."
+          ]
+        }
+      },
+      "Gamified Wallet": {
+        "overview": "Adds rewards and milestone incentives for engaging with wallet features and learning content.",
+        "technical_design": {
+          "Incentive Tokens": "Smart contracts track activities and distribute reward tokens.",
+          "NFT Integration": "Exclusive NFTs for learning and staking milestones.",
+          "Airdrops": "Periodic distributions based on activity frequency.",
+          "Backend Architecture": [
+            "Decentralized database for user progress and leaderboards.",
+            "Cross-chain NFT/token interoperability."
+          ]
+        }
+      }
+    }
+  },
+  "Tychi Wallet Extended Features": {
+    "Staking Capabilities": {
+      "overview": "Allows users to stake supported tokens through a simplified UI for passive income, including single-asset and liquidity pool staking.",
+      "technical_design": {
+        "Staking Pools Integration": {
+          "description": "Wallet connects via APIs and smart contracts to staking pools.",
+          "functionality": "Rewards are distributed proportionally to user contributions."
+        },
+        "DeFi Protocols Integration": {
+          "description": "Enables liquidity pool staking.",
+          "benefits": "Users earn both staking incentives and transaction fees."
+        },
+        "Smart Contracts": {
+          "description": "Secure contracts manage staking lifecycle.",
+          "features": [
+            "Low gas fee optimization",
+            "Efficient reward computation",
+            "Secure deposit and withdrawal handling"
+          ]
+        },
+        "User Dashboard": {
+          "features": [
+            "Real-time asset and reward tracking",
+            "Lock-in period display",
+            "Staking risk indicators"
+          ]
+        },
+        "Auto-Compounding": {
+          "description": "Optional feature that reinvests rewards to maximize APY automatically."
+        }
+      }
+    },
+    "Token Swapping": {
+      "overview": "Enables cross-chain and same-chain token swaps within the wallet using liquidity pools and bridges.",
+      "technical_design": {
+        "Liquidity Pools": {
+          "integration": "Multiple DEXs",
+          "routing_algorithm": "Finds optimal swap routes for best rates and minimal slippage"
+        },
+        "Cross-Chain Bridges": {
+          "supported_bridges": [
+            "Wormhole",
+            "Multichain",
+            "Synapse"
+          ],
+          "functionality": "Wraps/unlocks tokens to enable interoperability"
+        },
+        "Smart Contracts": {
+          "functions": [
+            "Token approval and swap execution",
+            "Bridge interaction",
+            "Transparency in transaction flow"
+          ]
+        },
+        "Real-Time Price Tracking": {
+          "features": [
+            "Displays price, liquidity depth, and fees",
+            "Customizable slippage tolerance settings"
+          ]
+        },
+        "Security and Auditing": {
+          "measures": [
+            "End-to-end encryption",
+            "Ongoing security audits",
+            "Exploit monitoring and incident response"
+          ]
+        }
+      }
+    },
+    "Debit Card Integration": {
+      "overview": "Premium feature allowing global crypto spending via digital and physical debit cards.",
+      "technical_design": {
+        "Access Model": {
+          "type": "Premium-only",
+          "pricing": {
+            "Digital Card": "$10/year",
+            "Physical Card": "$99 one-time"
+          }
+        },
+        "Conversion System": {
+          "real_time_conversion": true,
+          "crypto_to_fiat": "Supports multiple fiat currencies based on market rate"
+        },
+        "Payment Gateway Integration": {
+          "partners": [
+            "Visa",
+            "Mastercard"
+          ],
+          "APIs": "Secure integration with merchant payment networks"
+        },
+        "Security Protocols": {
+          "layers": [
+            "Multi-factor authentication",
+            "Real-time fraud monitoring",
+            "Encrypted transaction channels"
+          ]
+        },
+        "Card Management": {
+          "interface_features": [
+            "Request, activate, and deactivate cards",
+            "Set spending limits",
+            "Monitor transaction history"
+          ]
+        },
+        "Premium Rewards": {
+          "benefits": [
+            "Cashback on purchases",
+            "0% foreign transaction fees",
+            "Priority support",
+            "Budgeting tools",
+            "Loyalty rewards"
+          ]
+        },
+        "Wallet Integration": {
+          "features": [
+            "Auto-funding from staking rewards",
+            "Link with swap profits or wallets"
+          ]
+        }
+      }
+    },
+    "AI Agent Feature": {
+      "overview": "An intelligent trading assistant integrated into Tychi Wallet for premium users.",
+      "key_features": {
+        "Market Sentiment Analysis": "Analyzes real-time data from Twitter, Reddit, and forums.",
+        "Exchange Data Integration": "Monitors order books, volumes, and trends from major exchanges.",
+        "Customized Recommendations": "Token-based guidance tailored to user preferences.",
+        "Risk Assessment": "Provides volatility and trend-based risk scoring.",
+        "Performance Tracking": "Reports how past insights performed.",
+        "Real-Time Alerts": "Whale activity, price movement alerts.",
+        "Interactive Queries": "Users ask questions and get actionable answers (e.g., \u2018Should I buy ETH now?\u2019)."
+      },
+      "premium_details": {
+        "availability": "Premium users only",
+        "pricing_model": "$99.99/month",
+        "exclusive_tools": [
+          "Advanced analytics",
+          "Early market signals"
+        ]
+      },
+      "technical_design": {
+        "architecture": {
+          "Data Collection Layer": [
+            "Social Media Scrapers",
+            "Exchange APIs",
+            "News Aggregators"
+          ],
+          "Processing Layer": [
+            "Sentiment Analysis using NLP",
+            "Market Analysis Engine",
+            "Risk Assessment Module"
+          ],
+          "Recommendation Layer": "Combines all scores to generate personalized insights.",
+          "User Interface Layer": "Conversational interface for alerts, reports, and suggestions."
+        },
+        "working_flow": [
+          "User subscribes and selects tokens to track",
+          "Agent gathers and processes data continuously",
+          "Insights are displayed with alerts and risk analysis"
+        ],
+        "flowchart": {
+          "Standard Flow": "Subscription \u2192 Token Selection \u2192 Data Processing \u2192 Recommendation Delivery",
+          "Alert Flow": "Market Event \u2192 Risk Analysis \u2192 Notification Sent"
+        }
+      },
+      "benefits": [
+        "Everything in one place",
+        "Reduces guesswork",
+        "Great for traders, investors, and beginners"
+      ],
+      "use_cases": [
+        "Traders: Realtime buy/sell alerts",
+        "Investors: Sentiment tracking for holdings",
+        "Beginners: Simplified insights"
+      ],
+      "future_expansion": [
+        "Multi-language support",
+        "Blockchain analytics integration",
+        "User-personalized AI models"
+      ]
+    },
+    "Tokenomics": {
+      "overview": "Describes token distribution and supply strategy for the first 4 years.",
+      "details": {
+        "total_supply": "[To be specified]",
+        "distribution": "[To be defined: team, ecosystem, staking, rewards]",
+        "release_schedule": "[To be defined: linear, cliff, vesting]",
+        "inflation_model": "[To be added if applicable]"
+      }
+    }
+  },
+  "TychiWalletKnowledgeBase": {
+    "roadmap": {
+      "2024": {
+        "Q1": {
+          "title": "Foundational Development",
+          "milestones": [
+            {
+              "name": "Project Initiation",
+              "description": "Finalized concept, formed the core team, and conducted competitive market research to identify unique wallet differentiators.",
+              "tags": [
+                "planning",
+                "research",
+                "team formation"
+              ]
+            },
+            {
+              "name": "Technical Framework",
+              "description": "Architected the wallet's core systems for scalability, security, and multi-chain operability.",
+              "tags": [
+                "architecture",
+                "security",
+                "multi-chain"
+              ]
+            },
+            {
+              "name": "Regulatory Compliance",
+              "description": "Collaborated with legal advisors to ensure regulatory compliance in the U.S., EU, and APAC regions.",
+              "tags": [
+                "legal",
+                "compliance",
+                "global"
+              ]
+            }
+          ]
+        },
+        "Q2": {
+          "title": "Core Feature Development",
+          "milestones": [
+            {
+              "name": "Core Wallet Functions",
+              "description": "Developed core wallet capabilities\u2014asset storage, transfers, native token integration, and chain support.",
+              "tags": [
+                "wallet",
+                "blockchain",
+                "core features"
+              ]
+            },
+            {
+              "name": "Cold Wallet Integration",
+              "description": "Launched three-factor authentication and secure offline storage for enhanced asset safety.",
+              "tags": [
+                "security",
+                "cold wallet",
+                "3FA"
+              ]
+            },
+            {
+              "name": "UI/UX Design",
+              "description": "Established user-centric design patterns, accessibility, and intuitive onboarding flows.",
+              "tags": [
+                "UX",
+                "UI",
+                "onboarding"
+              ]
+            }
+          ]
+        },
+        "Q3": {
+          "title": "Beta Preparation and Testing",
+          "milestones": [
+            {
+              "name": "Beta Release",
+              "description": "Released the beta version for internal testers and early users for live feedback.",
+              "tags": [
+                "testing",
+                "user feedback",
+                "release"
+              ]
+            },
+            {
+              "name": "Smart Contract Foundation",
+              "description": "Built secure smart contracts for staking, subscriptions, and wallet logic.",
+              "tags": [
+                "smart contracts",
+                "staking",
+                "subscriptions"
+              ]
+            },
+            {
+              "name": "Brand & Awareness",
+              "description": "Launched branding and digital marketing campaigns in preparation for the official launch.",
+              "tags": [
+                "branding",
+                "marketing",
+                "PR"
+              ]
+            }
+          ]
+        },
+        "Q4": {
+          "title": "Launch Readiness",
+          "milestones": [
+            {
+              "name": "Feature Refinement",
+              "description": "Improved wallet performance and security based on beta feedback.",
+              "tags": [
+                "scaling",
+                "feedback",
+                "performance"
+              ]
+            },
+            {
+              "name": "Strategic Partnerships",
+              "description": "Established cross-chain partnerships with blockchain ecosystems and service providers.",
+              "tags": [
+                "partnerships",
+                "interoperability"
+              ]
+            }
+          ]
+        }
+      },
+      "2025": {
+        "Q1": {
+          "title": "Version 1.0 Launch",
+          "milestones": [
+            {
+              "name": "Official Launch",
+              "description": "Tychi Wallet 1.0 launched with multi-chain support, staking, token swapping, and cold wallet protection.",
+              "tags": [
+                "launch",
+                "multi-chain",
+                "wallet"
+              ]
+            },
+            {
+              "name": "Educational Wallet Module",
+              "description": "Released integrated blockchain learning with courses, quizzes, videos, and TYI rewards.",
+              "tags": [
+                "education",
+                "rewards",
+                "Web3"
+              ]
+            },
+            {
+              "name": "Gamified Wallet",
+              "description": "Introduced gamified experiences: milestone NFTs, token airdrops, and user activity incentives.",
+              "tags": [
+                "gamification",
+                "NFT",
+                "airdrops"
+              ]
+            }
+          ]
+        },
+        "Q2": {
+          "title": "Premium Services Rollout",
+          "milestones": [
+            {
+              "name": "Debit Card Launch",
+              "description": "Released crypto-linked debit cards for global payments and wallet fund access.",
+              "tags": [
+                "debit card",
+                "payments",
+                "premium"
+              ]
+            },
+            {
+              "name": "Premium Features",
+              "description": "Launched subscription plans for exclusive staking, cold storage, and early DeFi access.",
+              "tags": [
+                "subscription",
+                "DeFi",
+                "premium"
+              ]
+            },
+            {
+              "name": "Social Recovery",
+              "description": "Enabled wallet recovery using guardianship protocols via smart contracts and Shamir\u2019s Secret Sharing.",
+              "tags": [
+                "recovery",
+                "security",
+                "guardianship"
+              ]
+            }
+          ]
+        },
+        "Q3": {
+          "title": "Advanced Wallet Utilities",
+          "milestones": [
+            {
+              "name": "Family/Group Wallets",
+              "description": "Enabled shared asset management via multi-sig wallets and permission-based roles.",
+              "tags": [
+                "multi-sig",
+                "family",
+                "roles"
+              ]
+            },
+            {
+              "name": "Decentralized Identity",
+              "description": "Launched identity wallets with DID credentials and verifiable proofs.",
+              "tags": [
+                "DID",
+                "identity",
+                "credentials"
+              ]
+            },
+            {
+              "name": "Token Swap Optimization",
+              "description": "Enhanced swap engine with better route finding and bridge integrations.",
+              "tags": [
+                "DEX",
+                "liquidity",
+                "bridges"
+              ]
+            }
+          ]
+        },
+        "Q4": {
+          "title": "Security and Accessibility Expansion",
+          "milestones": [
+            {
+              "name": "Security Upgrades",
+              "description": "Integrated biometric login, hardware wallet sync, and AI-driven fraud alerts.",
+              "tags": [
+                "AI",
+                "biometrics",
+                "fraud detection"
+              ]
+            },
+            {
+              "name": "Language Support",
+              "description": "Added multilingual interface options to boost global adoption.",
+              "tags": [
+                "accessibility",
+                "localization",
+                "internationalization"
+              ]
+            }
+          ]
+        }
+      }
+    },
+    "summary_milestones": [
+      {
+        "version": "1.0",
+        "date": "2025 Q1",
+        "highlights": [
+          "Multi-chain wallet",
+          "Educational module",
+          "Cold storage"
+        ]
+      }
+    ],
+    "conclusion": {
+      "vision": "To make Web3 secure, user-friendly, and interoperable for global adoption.",
+      "pillars": [
+        "Multi-chain Bridging",
+        "Gas Fee Optimization",
+        "Social Recovery",
+        "Advanced Security"
+      ],
+      "strategic_goals": [
+        "Address blockchain fragmentation",
+        "Empower users with advanced control and recovery",
+        "Promote educational and gamified onboarding",
+        "Position Tychi Wallet as a central hub for decentralized finance"
+      ],
+      "long_term_impact": "Create a seamless, accessible blockchain environment fostering financial empowerment and mainstream participation."
+    },
+    "AMLPolicy": {
+      "meta": {
+        "title": "Anti-Money Laundering (AML) Policy",
+        "effective_date": "2025-05-20",
+        "last_updated": "2025-05-20",
+        "scope": "Applies to all users and operations globally",
+        "compliance_with": [
+          "FATF",
+          "KYC",
+          "CDD",
+          "National AML Laws"
+        ]
+      },
+      "sections": [
+        {
+          "id": "introduction",
+          "heading": "1. Introduction",
+          "description": "Outlines TychiWallet\u2019s commitment to detecting, preventing, and reporting financial crimes, in line with international standards."
+        },
+        {
+          "id": "regulatory_compliance",
+          "heading": "2. Regulatory Compliance",
+          "description": "Specifies adherence to international and national legal frameworks for AML/CTF (Counter-Terrorism Financing).",
+          "details": [
+            "FATF (Financial Action Task Force) guidelines",
+            "Applicable national AML and CTF laws",
+            "Mandatory Know Your Customer (KYC) protocols",
+            "Customer Due Diligence (CDD) implementation"
+          ]
+        },
+        {
+          "id": "customer_due_diligence",
+          "heading": "3. Customer Due Diligence (CDD)",
+          "description": "A multi-level process based on user risk profiling.",
+          "requirements": [
+            "Government-issued identity verification (passport, ID card)",
+            "Proof of address (utility bill, lease, etc.)",
+            "Enhanced Due Diligence (EDD) for high-risk customers"
+          ]
+        },
+        {
+          "id": "transaction_monitoring",
+          "heading": "4. Transaction Monitoring",
+          "description": "Automated real-time systems flag anomalous activities using behavioral analysis.",
+          "triggers": [
+            "Unusual transaction frequency or volume",
+            "Activity involving high-risk jurisdictions",
+            "Layering attempts through multiple wallets"
+          ]
+        },
+        {
+          "id": "reporting_record_keeping",
+          "heading": "5. Reporting and Record-Keeping",
+          "description": "Outlines obligations to retain and report financial activity.",
+          "measures": [
+            "Suspicious Activity Reports (SAR) submitted to authorities",
+            "Data retention for a minimum of 5 years post-transaction"
+          ]
+        },
+        {
+          "id": "risk_controls",
+          "heading": "6. Risk Assessment and Internal Controls",
+          "description": "Procedures to assess institutional AML vulnerabilities.",
+          "controls": [
+            "Annual internal risk assessments",
+            "Quarterly compliance audits",
+            "Mandatory employee training on AML practices"
+          ]
+        },
+        {
+          "id": "prohibited_activities",
+          "heading": "7. Prohibited Activities",
+          "description": "Clear list of user-prohibited behaviors.",
+          "activities": [
+            "Money laundering or terrorism financing",
+            "Transaction structuring to evade thresholds",
+            "Use of stolen or forged identity documents"
+          ]
+        },
+        {
+          "id": "enforcement",
+          "heading": "8. Enforcement and Compliance",
+          "description": "Actions TychiWallet may take against policy violations.",
+          "actions": [
+            "Immediate suspension or termination of accounts",
+            "Mandatory report filing to regulatory bodies",
+            "Collaboration with law enforcement authorities"
+          ]
+        },
+        {
+          "id": "amendments",
+          "heading": "9. Amendments",
+          "description": "The policy is reviewed and revised regularly to reflect evolving compliance standards."
+        },
+        {
+          "id": "contact_info",
+          "heading": "10. Contact Information",
+          "description": "For questions or AML-related reporting, contact: compliance@tychiwallet.com"
+        }
+      ],
+      "disclaimer": "This policy aligns with global AML standards. We recommend consulting a legal expert for local regulatory guidance."
+    },
+    "AboutUs": {
+      "company_profile": {
+        "name": "Tychi Limited",
+        "established": "2023",
+        "headquarters": "New Zealand",
+        "mission": "To redefine the way people interact with the decentralized world by delivering unmatched features, seamless user experiences, and cutting-edge security.",
+        "vision": "Making blockchain accessible, secure, and beneficial to everyone.",
+        "taglines": [
+          "Explore the future with us",
+          "Tychi Wallet is your gateway to Web3"
+        ]
+      }
+    },
+    "Careers": {
+      "overview": "Join a passionate team leading the Web3 revolution.",
+      "roles_available": [
+        "Blockchain Developer",
+        "UI/UX Designer",
+        "Web3 Marketing Specialist",
+        "Customer Support Engineer"
+      ],
+      "call_to_action": "Work with us and create history.",
+      "apply_link": "https://careers.tychiwallet.com"
+    },
+    "PressKit": {
+      "description": "Download our official brand assets for media use.",
+      "cta": "Access Press Kit",
+      "download_link": "https://tychiwallet.com/press-kit"
+    },
+    "Blog": {
+      "overview": "Stay informed about blockchain and Tychi\u2019s latest developments.",
+      "posts": [
+        {
+          "slug": "multi-chain-wallets",
+          "title": "Why Multi-Chain Wallets Are the Future of Crypto",
+          "summary": "Explore how cross-chain technology is driving crypto usability."
+        },
+        {
+          "slug": "simplifying-gas-fees-tyi-tokens",
+          "title": "Simplifying Gas Fees with TYI Tokens",
+          "summary": "How Tychi\u2019s native token helps optimize transaction costs."
+        },
+        {
+          "slug": "cold-wallet-security",
+          "title": "Cold Wallet Security: How Tychi Protects Your Assets",
+          "summary": "Understanding Tychi's approach to safeguarding offline assets."
+        }
+      ],
+      "blog_url": "https://blog.tychiwallet.com"
+    },
+    "Terms": {
+      "summary": "By using Tychi Wallet, you agree to our terms and conditions including platform rules and acceptable use policies.",
+      "terms_url": "https://tychiwallet.com/legal/terms"
+    },
+    "FinalNote": {
+      "message": "At Tychi Wallet, we\u2019re not just building a product; we\u2019re creating a movement. Join us and be part of the decentralized future!"
+    }
   }
 }
