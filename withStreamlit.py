@@ -26,32 +26,33 @@ def search_knowledge_base(user_text):
     def recursive_search(node):
         if isinstance(node, dict):
             for key, value in node.items():
+                # Check if it's a string field like title or description
+                if key in ["title", "description"] and isinstance(value, str):
+                    value_lower = value.lower()
+                    if any(keyword in value_lower for keyword in user_keywords):
+                        results.append(value)
+                        # Do not return early — multiple matches possible
+                # Check example questions
                 if key == "example_questions" and isinstance(value, list):
                     for question in value:
                         question_lower = question.lower()
-                        # Check if any user keyword is in this question
                         if any(keyword in question_lower for keyword in user_keywords):
-                            if "description" in node:
+                            if "description" in node and node["description"] not in results:
                                 results.append(node["description"])
-                            return True
-                elif isinstance(value, (dict, list)):
-                    found = recursive_search(value)
-                    if found:
-                        if "description" in node:
-                            results.append(node["description"])
-                        return True
+                # Recurse
+                if isinstance(value, (dict, list)):
+                    recursive_search(value)
+
         elif isinstance(node, list):
             for item in node:
-                found = recursive_search(item)
-                if found:
-                    return True
-        return False
+                recursive_search(item)
 
     recursive_search(knowledge_base)
+    
     if results:
-        unique_results = list(dict.fromkeys(results))
-        return "\n\n".join(unique_results)
+        return "\n\n".join(list(dict.fromkeys(results)))
     return None
+
 
 # --- Initialize Session State ---
 if "messages" not in st.session_state:
@@ -67,6 +68,12 @@ if st.button("Send") and user_input:
 
     # Try to fetch answer from knowledge base first
     kb_reply = search_knowledge_base(user_input)
+    if kb_reply:
+    st.write("✅ Matched from Knowledge Base:")
+    st.write(kb_reply)
+else:
+    st.write("❌ No match in Knowledge Base. Using Groq API.")
+
 
     if kb_reply:
         reply = kb_reply
