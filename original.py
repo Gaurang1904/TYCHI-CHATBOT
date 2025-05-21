@@ -1,23 +1,25 @@
-import os
+from flask import Flask, request, jsonify, send_from_directory
 import json
 from groq import Groq
+from flask_cors import CORS
 
-# --- Load Knowledge Base ---
-with open('knowledge_base.json.json', 'r') as f:
+app = Flask(__name__, static_folder='static')
+CORS(app)  # Allow frontend JS to call backend
+
+# Load knowledge base
+with open('knowledge_base.json', 'r') as f:
     knowledge_base = json.load(f)
 
-# --- Groq Client Setup ---
-client = Groq(
-    api_key="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",
-)
+# Groq API client
+client = Groq(api_key="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")  # Replace with your actual key
 
-# --- Chat History ---
+# Initial message history
 messages = [
     {"role": "system", "content": "You are a helpful assistant for Tychi Wallet. Use the context to answer questions accurately."}
 ]
 
-# --- Function to Search Knowledge Base ---
-def search_knowledge_base(query, kb, max_results=3):
+# Search function
+def search_kb(query, kb, max_results=3):
     results = []
     query = query.lower()
     for category in kb.get("categories", []):
@@ -30,46 +32,47 @@ def search_knowledge_base(query, kb, max_results=3):
                 return results
     return results
 
-# --- Main Loop ---
-print("🤖 Tychi Chatbot is ready! Type 'exit' to quit.\n")
+# Serve frontend
+@app.route('/')
+def serve_chat():
+    return send_from_directory('static', 'chat.html')
 
-while True:
-    user_input = input("You: ")
-    if user_input.lower() in ["exit", "quit"]:
-        print("Bot: Goodbye!")
-        break
+# Chat endpoint
+@app.route('/chat', methods=['POST'])
+def chat():
+    user_input = request.json.get("message", "")
 
-    # Search relevant info from KB
-    kb_matches = search_knowledge_base(user_input, knowledge_base)
+    kb_matches = search_kb(user_input, knowledge_base)
+    context = "\n\n".join(kb_matches) if kb_matches else "No related entries found."
 
-    # Build context prompt
-    context_text = "\n\n".join(kb_matches) if kb_matches else "No related entries found in the knowledge base."
-
-    # Add system prompt with context
     system_prompt = {
         "role": "system",
-        "content": f"You are a Tychi Wallet assistant. Use the following context to answer the user:\n\n{context_text}"
+        "content": f"You are a Tychi Wallet assistant. Use the following context:\n\n{context}"
     }
 
-    # Update message list (override system prompt for each turn with new context)
-    conversation = [system_prompt] + messages[1:]  # Preserve user-assistant history, but replace system
-
-    # Add current user message
+    conversation = [system_prompt] + messages[1:]  # Replace system each time
     conversation.append({"role": "user", "content": user_input})
 
     try:
-        # Get Groq's response
-        chat_completion = client.chat.completions.create(
+        response = client.chat.completions.create(
             messages=conversation,
             model="llama3-70b-8192"
         )
+        reply = response.choices[0].message.content
 
-        reply = chat_completion.choices[0].message.content
-        print("Bot:", reply)
-
-        # Update message history
+        # Save messages
         messages.append({"role": "user", "content": user_input})
         messages.append({"role": "assistant", "content": reply})
 
+        return jsonify({"reply": reply})
+
     except Exception as e:
-        print("Bot: An error occurred:", e)
+        return jsonify({"reply": f"Error: {str(e)}"}), 500
+
+if __name__ == '__main__':
+    import sys
+    if sys.argv[0].endswith("debugpy_launcher"):
+        app.run(debug=True, use_reloader=False)
+    else:
+        app.run(debug=True)
+
